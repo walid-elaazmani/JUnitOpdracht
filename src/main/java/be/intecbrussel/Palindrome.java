@@ -15,7 +15,7 @@ public class Palindrome {
             return false;
         }
 
-        input = input.trim().replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+        input = input.trim().replaceAll("[^a-zA-Z0-9]", "");
         String palindrome = new StringBuilder(input).reverse().toString();
 
         return palindrome.equals(input);
