@@ -22,15 +22,4 @@ public class Palindrome {
 
     }
 
-
-    public static void main(String[] args) {
-        Palindrome p = new Palindrome();
-
-        System.out.println(p.isPalindrome("A man, a plan, a caretaker, a moksha, Lufkin, a jacinth, Gile, Daniell, Ivanov, an odor, a negativeness, a tsarevna, melanomas, an ire…globigerinas, a mon, a leman, Vera, Stassen, Evita, Genaro, Donavon, a villein, a delight, Nica, Janik, Fulahs, Komarek, a ter, a canal, Panama."));
-    }
-
-
-
-
-
 }
