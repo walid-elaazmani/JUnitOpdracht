@@ -42,7 +42,9 @@ public class PalindromeTest {
 
     @Test
     void ifPalindromeShouldReturnTrue(){
-        boolean toTest = palindrome.isPalindrome("goog");
+
+        String exampleOfPalindrome = "rotator";
+        boolean toTest = palindrome.isPalindrome(exampleOfPalindrome);
 
         assertTrue(toTest);
     }
@@ -53,11 +55,27 @@ public class PalindromeTest {
         assertFalse(toTest);
     }
 
+    @Test
+    void ifPalindromeContainsSpecialCharactersIgnoreAndReturnTrue(){
+        Boolean toTest = palindrome.isPalindrome("ro ***/////^^   or");
+        assertTrue(toTest);
+    }
 
+    @Test
+    void testingALongPalindromeShouldBeTrue(){
 
+        String longPalindrome = "A man, a plan, a canal: Panama";
 
+        boolean toTest = palindrome.isPalindrome(longPalindrome);
 
+        assertTrue(toTest);
+    }
 
+    @Test
+    void aLetterShouldReturnTrue(){
+        boolean toTest = palindrome.isPalindrome("b");
 
-
+        assertTrue(toTest);
+    }
+    
 }
